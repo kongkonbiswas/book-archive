@@ -37,6 +37,7 @@ const displaySearchResult = (docs, numFound) => {
     </div>
     `;
     searchResult.appendChild(div);
+    // div added 
   });
 };
 
