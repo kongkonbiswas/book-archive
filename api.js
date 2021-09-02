@@ -1,8 +1,9 @@
+// javascript cod start
 document.getElementById("error-message").style.display = "none";
 const searchBook = () => {
   const searchField = document.getElementById("search-field");
   const searchText = searchField.value;
-  // clear data
+  // clear data error massage
   searchField.value = "";
   document.getElementById("error-message").style.display = "none";
   // error section
@@ -16,7 +17,7 @@ const searchBook = () => {
 const displayError = (error) => {
   document.getElementById("error-message").style.display = "block";
 };
-
+// book result part
 const displaySearchResult = (docs, numFound) => {
   const searchResult = document.getElementById("search-result");
   searchResult.textContent = "";
@@ -39,3 +40,4 @@ const displaySearchResult = (docs, numFound) => {
   });
 };
 
+// code end
